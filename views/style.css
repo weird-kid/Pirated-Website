@@ -1,0 +1,61 @@
+
+body {
+	width: 100vw;
+	height: 100vh;
+	background-color: #050739;
+}
+
+.nav-bar-container {
+	width: 100vw;
+	height: 6vh;	
+	background-color: #050739;
+	border-radius: 10px;
+	opacity: 0.7;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-evenly;
+	align-items: center;
+	color: white;
+}
+
+.nav-bar-1 {
+	width: 28vw;
+	height: 6vh;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: flex-start;
+}
+
+.nav-bar-2 {
+	width: 35vw;
+	height: 6vh;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-evenly;
+	font-size: 18px;
+}
+
+.nav-bar-2 input {
+	border-radius: 50px;
+	border-color: cyan;
+	color: cyan;
+	width: 7vw;
+	background-color: #050739;
+}
+
+.nav-bar-3 {
+	width: 28vw;
+	height: 6vh;
+	display: flex;
+	flex-flow: row nowrap; 
+	justify-content: center; 
+	align-items: center;
+}
+
+.nav-bar-3 button img {
+	height: 4vh;
+	width: 10vw;
+}
+
+
+
