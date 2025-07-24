@@ -2,13 +2,13 @@
 body {
 	width: 100vw;
 	height: 100vh;
-	background-color: #050739;
+	background-color: #080321;
 }
 
 .nav-bar-container {
 	width: 100vw;
 	height: 6vh;	
-	background-color: #050739;
+	opacity: 0;
 	border-radius: 10px;
 	opacity: 0.7;
 	display: flex;
@@ -16,10 +16,11 @@ body {
 	justify-content: space-evenly;
 	align-items: center;
 	color: white;
+	font-family: Impact;
 }
 
 .nav-bar-1 {
-	width: 28vw;
+	width: 20vw;
 	height: 6vh;
 	display: flex;
 	flex-flow: row nowrap;
@@ -27,35 +28,62 @@ body {
 }
 
 .nav-bar-2 {
-	width: 35vw;
+	width: 38vw;
 	height: 6vh;
 	display: flex;
 	flex-flow: row nowrap;
 	justify-content: space-evenly;
+	align-items: center;
 	font-size: 18px;
 }
+
+
+.nav-bar-2 a {
+		text-decoration: none;
+		color: #B8B8B8;
+}
+
+.nav-bar-2 a:hover {
+		color: #FFFFFF;
+}
+
 
 .nav-bar-2 input {
 	border-radius: 50px;
 	border-color: cyan;
 	color: cyan;
 	width: 7vw;
-	background-color: #050739;
+	height: 3.2vh;
+	background-color: #080321;
+}
+
+.nav-bar-2 input:hover {
+		background-color: cyan;
+		color: #080321;
 }
 
 .nav-bar-3 {
-	width: 28vw;
+	width: 20vw;
 	height: 6vh;
 	display: flex;
 	flex-flow: row nowrap; 
-	justify-content: center; 
+	justify-content: flex-end; 
 	align-items: center;
 }
+.nav-bar-3 button {
+		background-color: black; 
+		border: 0px;
+}
 
-.nav-bar-3 button img {
-	height: 4vh;
-	width: 10vw;
+.nav-bar-3 img {
+	height: 3vh;
+	width: 2vw;
+	background-color: black;
 }
 
 
-
+.content {
+		height: 400vh;
+		width: 100vw;
+		overflow: scroll;
+}
