@@ -1,8 +1,7 @@
-
 body {
 	width: 100vw;
 	height: 100vh;
-	background-color: #080321;
+	background-color:rgb(1, 6, 14);
 }
 
 .nav-bar-container {
@@ -10,17 +9,17 @@ body {
 	height: 6vh;	
 	opacity: 0;
 	border-radius: 10px;
-	opacity: 0.7;
+	opacity: 1;
 	display: flex;
 	flex-flow: row nowrap;
 	justify-content: space-evenly;
 	align-items: center;
 	color: white;
-	font-family: Impact;
+	position: fixed;
 }
 
 .nav-bar-1 {
-	width: 20vw;
+	width: 28vw;
 	height: 6vh;
 	display: flex;
 	flex-flow: row nowrap;
@@ -28,23 +27,27 @@ body {
 }
 
 .nav-bar-2 {
-	width: 38vw;
+	width: 25vw;
 	height: 6vh;
 	display: flex;
 	flex-flow: row nowrap;
 	justify-content: space-evenly;
 	align-items: center;
-	font-size: 18px;
+	font-size: 20px;
 }
 
 
 .nav-bar-2 a {
 		text-decoration: none;
 		color: #B8B8B8;
+		font-family: 'courier', 'courier new' , monospace;
+		font-weight: bold;
+
 }
 
 .nav-bar-2 a:hover {
 		color: #FFFFFF;
+		opacity: 1;
 }
 
 
@@ -54,7 +57,7 @@ body {
 	color: cyan;
 	width: 7vw;
 	height: 3.2vh;
-	background-color: #080321;
+	background-color: rgba(0,0,0,0.2);
 }
 
 .nav-bar-2 input:hover {
@@ -63,27 +66,75 @@ body {
 }
 
 .nav-bar-3 {
-	width: 20vw;
+	width: 28vw;
 	height: 6vh;
 	display: flex;
 	flex-flow: row nowrap; 
 	justify-content: flex-end; 
 	align-items: center;
+	
 }
 .nav-bar-3 button {
-		background-color: black; 
 		border: 0px;
+		background-color: rgba(255,255,255,0);
+
 }
 
 .nav-bar-3 img {
 	height: 3vh;
 	width: 2vw;
-	background-color: black;
 }
 
 
-.content {
-		height: 400vh;
+.page-container{
+		height: 100vh;
 		width: 100vw;
 		overflow: scroll;
+		display: flex;
+		flex-flow: column  nowrap;
 }
+
+.new-release-poster {
+		height: 55vh;
+		width: 100vw;
+		background-size: cover;
+		background-image: 	linear-gradient(to bottom, rgba(1, 6, 14, 0.9) 0%, rgba(1,6,14,0.3) 20%, rgba(1,6,14,0.3) 70%, rgba(1,6,14,0.9) 90%), 
+							linear-gradient(to right, rgba(1,6,14,0.9) 0%, rgba(1,6,14,0) 30%, rgba(1,6,14,0) 70%, rgba(1,6,14,0.9) 100%),
+							url('./img/movie1.webp');
+}
+
+
+.new-release-logo {
+		margin-top: 28vh; 
+		height: 18vh;
+		width: 33vw;
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-positon: center;
+		padding: 5vh;
+		background-image: url('./img/movie-logo.png');
+}
+
+.Moderate-spacing {
+		width: 100vw;
+		height: 10vh;
+}
+
+h6 {
+		margin-left: 2vw;
+		color: white;
+		font-size: 20px;
+		font-family: 'courier', 'courier new' , monospace;
+		font-weight: bold;
+}
+
+.movie-catelog {
+		display: flex;
+		flex-flow: row nowrap;
+
+}
+.Light-Spacing {
+		width: 100vw;
+		height: 5vh;
+}
+
