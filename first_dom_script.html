@@ -1,0 +1,38 @@
+<html>
+	<body>
+		<img src="" id="image">
+		<style>
+		 .image {
+			width: 100vw;
+			height: 100vh;
+		 }
+		 </style>
+
+		<script>
+		 async function get_img() {
+				 try {
+						 let raw_img = await fetch("https://media.themoviedb.org/t/p/w300_and_h450_bestv2/41dfWUWtg1kUZcJYe6Zk6ewxzMu.jpg");
+						 let blob_img = await raw_img.blob();
+							
+						 let file_reader = new FileReader();
+						 file_reader.readAsDataURL(blob_img);
+
+						const html_img = document.getElementById("image");
+
+						file_reader.addEventListener('load', () => {
+						
+								 let data_url = file_reader.result;
+								 html_img.src = data_url;
+								 console.log(data_url);
+						});
+
+				 }catch(err) {
+						 console.log(err);
+				 }
+		 	}
+
+		 get_img();
+
+		</script>
+	</body>
+</html>

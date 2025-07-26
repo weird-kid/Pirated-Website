@@ -3,8 +3,8 @@ let tmdb_token = process.env.tmdb_token;
 let auth_value = 'Bearer ' + tmdb_token;
 
 
-const url = 'https://api.themoviedb.org/3/movie/popular?language=en-US&page=1';
-const options = {
+let url = 'https://api.themoviedb.org/3/movie/popular?language=en-US&page=1';
+let options = {
   method: 'GET',
   headers: {
     accept: 'application/json',
@@ -30,9 +30,15 @@ async function get_data() {
 						"release_date" : json_data.results[i].release_date
 						});
 		}
+		
+		/* Testing whether backdrop works ? */	
 
-		console.log(movies);
-
+		options.headers.accept = 'image/jpg';
+		let image_url = 'https://image.tmdb.org/t/p/orginal/';
+		let raw_img = await fetch(image_url + movies[0].backdrop_img, options);	
+		let blob_obj = await raw_img.blob();
+		console.log(blob_obj);
+		
 	  }catch(err){
 			  console.error(err);
 	  }
