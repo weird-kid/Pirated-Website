@@ -2,8 +2,11 @@
 
 Search-Engine: 
 				Queryed_content ----> /search/titles (TMDB API) -----> { "image", "year", "rating", "title" }
+																					|
+																					|
+																					V
+									Crop, Blur the picture		<------		Download backdrop images
 
 Home-page-Trending:
 				/movie/popular ----> {"backdrop_path", "title"}	
-
 

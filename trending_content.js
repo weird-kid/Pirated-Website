@@ -1,8 +1,7 @@
 let process = require("process")
-let tmdb_read_access_token = process.env.tmdb_read_access_token;
-let auth_value = 'Bearer ' + tmdb_read_access_token;
+let tmdb_token = process.env.tmdb_token;
+let auth_value = 'Bearer ' + tmdb_token;
 
-console.log(auth_value);
 
 const url = 'https://api.themoviedb.org/3/movie/popular?language=en-US&page=1';
 const options = {
@@ -13,16 +12,31 @@ const options = {
   }
 };
 
+/* I want this function to return 
+	{"title", "backdrop_img", "id", "release_date" } values from api.
+ */
 async function get_data() {
       try {
 	  	let raw_data	= await fetch(url, options)
 		let json_data 	= await raw_data.json();
-		console.log(json_data);
-		return json_data;
+		let n = json_data.results.length;	
+		
+		movies = [];
+		for(let i=0; i<n; i++){
+				movies.push({
+						"title" : json_data.results[i].title,
+						"backdrop" : json_data.results[i].backdrop_path,
+						"id" : json_data.results[i].id,
+						"release_date" : json_data.results[i].release_date
+						});
+		}
+
+		console.log(movies);
+
 	  }catch(err){
 			  console.error(err);
 	  }
 }
 
-console.log(get_data());
+get_data();
 
