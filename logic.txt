@@ -1,0 +1,9 @@
+
+
+Search-Engine: 
+				Queryed_content ----> /search/titles (TMDB API) -----> { "image", "year", "rating", "title" }
+
+Home-page-Trending:
+				/movie/popular ----> {"backdrop_path", "title"}	
+
+
