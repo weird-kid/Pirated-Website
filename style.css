@@ -1,0 +1,39 @@
+
+body {
+	width: 100vw;
+	height: 100vh; 
+	background-color: #1C021B; 
+}
+
+.main-container {
+		width: 100vw;
+		height: 100vh;
+		display: flex;
+		flex-flow: row nowrap;  /* Ignoring nowrap! */
+		justify-content: space-evenly;
+}
+
+.button-container {
+		width: 10vw;
+		height: 100vh;
+		display: flex;
+		justify-content: space-evenly;
+		align-items: center;
+}
+
+.button {
+		width: 4vw;
+		height: 4vw;
+		font-size: 20px;
+		border-radius: 50px;
+		color: white;
+		position: fixed;
+		opacity: 0.8;
+		background-color: #02151C;
+}
+
+.image {
+		width: 98vw;
+		height: 98vh;
+} 
+	

@@ -1,0 +1,20 @@
+<html>
+	<body>	
+		<img class="image" src="">
+	<script>
+	let url = "https://image.tmdb.org/t/p/original/8J6UlIFcU7eZfq9iCLbgc8Auklg.jpg"
+			
+
+	async function get_img() {
+			let raw_data = await fetch(url);
+			let blob_data = await raw_data.blob();
+			let internal_url = URL.createObjectURL(blob_data);
+			let html_img = document.getElementsByClassName('image')[0];
+			html_img.src = internal_url;
+
+	}
+
+	get_img();
+	</script>
+	</body>
+</html>

@@ -1,0 +1,13 @@
+
+Home Page:
+
+		It should load up one of the trending content backdrop image, then immediately it should become a little blurred.
+		And the title should appear. Smoothly, the navigation-bar also loads in.
+
+		After 5 seconds, it should movie over to next trending content.
+
+		There should also be a small fancy scroll thing for the user to navigate throught all trending content.
+
+
+
+

@@ -94,13 +94,12 @@ body {
 		flex-flow: column  nowrap;
 }
 
-.new-release-poster {
-		height: 55vh;
+.image {
+		height: 60vh;
 		width: 100vw;
-		background-size: cover;
+		background-size: auto;
 		background-image: 	linear-gradient(to bottom, rgba(1, 6, 14, 0.9) 0%, rgba(1,6,14,0.3) 20%, rgba(1,6,14,0.3) 70%, rgba(1,6,14,0.9) 90%), 
-							linear-gradient(to right, rgba(1,6,14,0.9) 0%, rgba(1,6,14,0) 30%, rgba(1,6,14,0) 70%, rgba(1,6,14,0.9) 100%),
-							url('./img/movie1.webp');
+							linear-gradient(to right, rgba(1,6,14,0.9) 0%, rgba(1,6,14,0) 30%, rgba(1,6,14,0) 70%, rgba(1,6,14,0.9) 100%);
 }
 
 
