@@ -18,7 +18,7 @@ async function get_data() {
 		let json_data 	= await raw_data.json();
 		let n = json_data.results.length;	
 		movies = [];
-		console.log(json_data.results[0]);
+
 		for(let i=0; i<n; i++){
 
 				let path = json_data.results[i].backdrop_path;
@@ -30,20 +30,24 @@ async function get_data() {
 				
 				fr.addEventListener('load', ()=> {
 
+			
+					let html_img = document.getElementsByClassName("image")[0];		
+
 					movies.push({
 								"title" : json_data.results[i].title,
 								"backdrop" : fr.result,
 								"id" : json_data.results[i].id,
 								"release_date" : json_data.results[i].release_date
 						});
-				   
+
+				        html_img.src = movies[0].backdrop; 
 				});
 			
 		}
 		
-	  let html_img = document.getElementsByClassName("image")[0];		
-	  let cnt=0;	
-	 
+	
+	
+	 /*	 
 	  setInterval(()=> {
 			  if(cnt > 18){
 					  return;
@@ -51,6 +55,7 @@ async function get_data() {
 			  html_img.src = movies[cnt].backdrop;
 			  cnt++;
 	  }, 3000);
+	  */
 			  
 				
 	  }catch(err){
