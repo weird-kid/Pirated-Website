@@ -1,0 +1,26 @@
+
+body {
+	width: 100vw;
+	height: 100vh; 
+	background-color: white; 
+}
+
+.main-container {
+		width: 100vw;
+		height: 100vh;
+		display: flex;
+		flex-flow: row nowrap;  /* Ignoring nowrap! */
+		justify-content: space-evenly;
+}
+
+
+
+
+
+.image {
+		width: 98vw;
+		height: 98vh;
+		display: flex;
+}
+
+
